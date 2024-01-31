@@ -3,6 +3,9 @@ from datetime import datetime
 import cv2
 import math
 
+ImageNumber = 0
+
+# Get Time
 def get_time(image):
     with open(image, 'rb') as image_file:
         img = Image(image_file)
@@ -45,10 +48,11 @@ def calculate_matches(descriptors_1, descriptors_2):
             good_matches.append(m)
     return good_matches
 
+winname = "Matches:"
 def display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches):
     match_img = cv2.drawMatches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches[:100], None)
     resize = cv2.resize(match_img, (1600, 600), interpolation = cv2.INTER_AREA)
-    cv2.imshow('matches', resize)
+    cv2.imshow(winname, resize)
     cv2.waitKey(0)  # Wartet auf einen Tastendruck
     cv2.destroyAllWindows()  # Schließt alle OpenCV-Fenster
 
@@ -79,7 +83,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
     speed = distance / time_difference
     return speed
 
-# Beispiel für die Ausführung des Codes
+# Execute Code
 image_1 = 'photo_07464.jpg'
 image_2 = 'photo_07465.jpg'
 
@@ -93,3 +97,4 @@ average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 speed = calculate_speed_in_kmps(average_feature_distance, 12648, time_difference)
 
 print(f"Approximately:  {speed} kmps")
+
