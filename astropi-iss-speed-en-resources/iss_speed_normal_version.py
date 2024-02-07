@@ -96,5 +96,4 @@ coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_
 average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 speed = calculate_speed_in_kmps(average_feature_distance, 12648, time_difference)
 
-print(f"Approximately:  {speed} kmps")
-
+print(f"Approximately:  {round(speed,2)} kmps")
