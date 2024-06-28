@@ -1,5 +1,6 @@
 #  | ISS Photo Speed estimation Project | AstroPi | Python  | 
-[![Watch the video](https://www.gstatic.com/culturalinstitute/searchar/assets/international_space_station/desktop_light.mp4)](https://youtu.be/vt5fpE0bzSY)
+<video src="https://www.gstatic.com/culturalinstitute/searchar/assets/international_space_station/desktop_light.mp4" width="320" height="240" controls></video>
+
 ## Description:
 This project involves taking photos with a Raspberry Pi Camera on The International Space Station (ISS) and using these images to estimate the speed of the observed changes. The Code provided here has been tested on the ISS and utilizes image processing techniques to analyze the captured images. When the code was tested on the ISS we got the result 7.47 km/s, which is close to the correct speed which is 7.66 km/s.
 
