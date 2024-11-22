@@ -4,7 +4,7 @@
 ## Description:
 This project involves taking photos with a Raspberry Pi Camera on The International Space Station (ISS) and using these images to estimate the speed of the observed changes. The Code provided here has been tested on the ISS and utilizes image processing techniques to analyze the captured images. When the code was tested on the ISS we got the result 7.47 km/s, which is close to the correct speed which is 7.66 km/s.
 
-#Mission Space Lab from the ESA and Raspberry PiCompany
+# Mission Space Lab from the ESA and Raspberry PiCompany
 Solve a scientific task in space
 
 In Mission Space Lab teams are invited to write computer programs that solve a scientific task in space: to gather data to calculate the speed at which the International Space Station (ISS) is travelling as accurately as possible.
