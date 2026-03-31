@@ -141,6 +141,11 @@ Created by:
 
 ---
 
+## Contact:
+jay.miller@bladiostudio.com
+
+---
+
 ## License
 
 Copyright © 2026 BabbaWaagen
