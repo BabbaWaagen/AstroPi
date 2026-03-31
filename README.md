@@ -14,6 +14,8 @@ We followed the general idea from the official Astro Pi project, but implemented
 
 The program takes two images, detects features, matches them, measures the movement, and converts that into a real-world speed.
 
+The experiment was executed on the Astro Pi computers aboard the ISS as part of the official Astro Pi Mission Space Lab program.
+
 Estimated speed:
 
 **~7.47 km/s**
